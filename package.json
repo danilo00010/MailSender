@@ -1,16 +1,19 @@
 {
-  "name": "email_sender",
-  "version": "1.0.0",
-  "description": "",
-  "main": "sender.js",
+  "name": "mailersender-ts",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "bun run --watch src/index.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.13",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
   "dependencies": {
-    "express": "^4.17.1",
-    "nodemailer": "^6.4.14"
+    "@elysiajs/swagger": "^0.7.4",
+    "elysia": "^0.7.21",
+    "nodemailer": "^6.9.7"
   }
 }
